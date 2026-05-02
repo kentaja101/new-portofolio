@@ -1,7 +1,6 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import portfolioData from '@/data/portfolio.json';
 import styles from './About.module.css';
 
 export default function About() {
