@@ -30,7 +30,7 @@ export default async function BlogPage() {
                 </div>
             ) : (
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
-                    {posts.map(post => (
+                    {posts.map((post: import('@prisma/client').BlogPost) => (
                         <article key={post.id} style={{ backgroundColor: 'var(--card-bg)', padding: '2rem', borderRadius: '12px', border: '1px solid var(--border-color)' }}>
                             <h2 style={{ color: 'var(--text-primary)', marginBottom: '1rem' }}>{post.title}</h2>
                             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.6 }}>{post.content}</p>
