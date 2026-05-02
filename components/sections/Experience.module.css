@@ -1,0 +1,109 @@
+.experienceSection {
+    background-color: var(--bg-secondary);
+}
+
+.experienceContainer {
+    max-width: 800px;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background-color: var(--border-color);
+}
+
+.timelineItem {
+    position: relative;
+    padding-bottom: 4rem;
+}
+
+.timelineItem:last-child {
+    padding-bottom: 0;
+}
+
+.timelineDot {
+    position: absolute;
+    left: -2.4rem;
+    top: 0.3rem;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--accent-hover);
+    border: 4px solid var(--bg-secondary);
+    box-shadow: 0 0 0 2px var(--accent-hover);
+    z-index: 10;
+}
+
+.timelineContent {
+    background-color: var(--card-bg);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--border-color);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.timelineContent:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: baseline;
+    margin-bottom: 0.5rem;
+}
+
+.role {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.company {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--accent-hover);
+}
+
+.period {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    font-family: var(--font-inter);
+    margin-bottom: 1rem;
+    display: inline-block;
+    padding: 0.2rem 0.8rem;
+    background-color: var(--bg-color);
+    border-radius: 999px;
+    border: 1px solid var(--border-color);
+}
+
+.description {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .timeline {
+        padding-left: 1.5rem;
+    }
+
+    .timelineDot {
+        left: -1.9rem;
+    }
+
+    .timelineContent {
+        padding: 1.5rem;
+    }
+}

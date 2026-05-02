@@ -1,0 +1,36 @@
+.skillsSection {
+    background-color: var(--bg-secondary);
+}
+
+.skillsContainer {
+    max-width: 900px;
+    text-align: center;
+}
+
+.skillsGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.skillChip {
+    padding: 0.8rem 1.5rem;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-family: var(--font-inter);
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    cursor: default;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+}
+
+@media (max-width: 768px) {
+    .skillChip {
+        font-size: 0.95rem;
+        padding: 0.6rem 1.2rem;
+    }
+}

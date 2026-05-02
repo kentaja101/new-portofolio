@@ -1,0 +1,131 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 50;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid transparent;
+}
+
+.scrolled {
+    background-color: var(--overlay-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+}
+
+.navContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.logo {
+    font-family: var(--font-outfit), sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    letter-spacing: -0.05em;
+}
+
+.dot {
+    color: var(--accent-hover);
+}
+
+.desktopNav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navLink {
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    transition: color 0.2s ease;
+}
+
+.navLink:hover {
+    color: var(--text-primary);
+}
+
+.ctaButton {
+    padding: 0.6rem 1.5rem;
+    background-color: var(--text-primary);
+    color: var(--bg-color);
+    border-radius: 9999px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+}
+
+.ctaButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: var(--accent-hover);
+    color: white;
+}
+
+.mobileActions {
+    display: none;
+    align-items: center;
+    gap: 1rem;
+}
+
+.menuButton {
+    background: none;
+    border: none;
+    color: var(--text-primary);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobileMenu {
+    overflow: hidden;
+    background-color: var(--bg-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.mobileNavContent {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem 2rem;
+    gap: 1.5rem;
+}
+
+.mobileNavLink {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+}
+
+.mobileNavLink:hover {
+    color: var(--text-primary);
+}
+
+.mobileCtaButton {
+    display: inline-block;
+    text-align: center;
+    padding: 0.8rem 1.5rem;
+    background-color: var(--text-primary);
+    color: var(--bg-color);
+    border-radius: 8px;
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .desktopNav {
+        display: none;
+    }
+
+    .mobileActions {
+        display: flex;
+    }
+}
