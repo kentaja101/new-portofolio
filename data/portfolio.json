@@ -1,0 +1,61 @@
+{
+  "personalInfo": {
+    "name": "Jonathan Kent",
+    "tagline": "Software Engineer & Designer",
+    "description": "I build digital experiences that are elegant, performant, and deeply engaging. Passionate about modern web technologies and clean design.",
+    "email": "hello@jonathankent.com",
+    "social": {
+      "github": "https://github.com/jonathankent",
+      "linkedin": "https://linkedin.com/in/jonathankent",
+      "twitter": "https://twitter.com/jonathankent"
+    }
+  },
+  "skills": [
+    "JavaScript", "TypeScript", "React", "Next.js", "Node.js", 
+    "Framer Motion", "CSS Modules", "GraphQL", "Figma", "UI/UX"
+  ],
+  "experience": [
+    {
+      "id": "exp-1",
+      "role": "Senior Frontend Engineer",
+      "company": "Tech Innovators Inc.",
+      "period": "2023 - Present",
+      "description": "Led the frontend team to build highly scalable web applications. Improved load times by 40% using Next.js."
+    },
+    {
+      "id": "exp-2",
+      "role": "Web Developer",
+      "company": "Creative Digital Agency",
+      "period": "2020 - 2023",
+      "description": "Developed interactive and visually stunning websites for premium clients around the globe."
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj-1",
+      "title": "Eura - E-Commerce Platform",
+      "description": "A cutting-edge modern e-commerce web platform built with headless CMS and Next.js.",
+      "image": "/projects/eura.jpg",
+      "tags": ["Next.js", "TypeScript", "Stripe"],
+      "githubUrl": "https://github.com/",
+      "liveUrl": "https://example.com"
+    },
+    {
+      "id": "proj-2",
+      "title": "Aura - Analytics Dashboard",
+      "description": "A sophisticated internal dashboard with beautiful data visualizations and dark mode.",
+      "image": "/projects/aura.jpg",
+      "tags": ["React", "Framer Motion", "Chart.js"],
+      "githubUrl": "https://github.com/",
+      "liveUrl": "https://example.com"
+    }
+  ],
+  "testimonials": [
+    {
+      "id": "test-1",
+      "name": "Sarah Jenkins",
+      "role": "CEO, StartupX",
+      "text": "Jonathan provided an incredibly seamless digital experience for our startup. Highly recommended!"
+    }
+  ]
+}
